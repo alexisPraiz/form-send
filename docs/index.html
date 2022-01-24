@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="formulario.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<main class="main">
+	<header>
+		<h1 class="header_title">Checkout</h1>
+	</header>
+
+	<section>
+		<div class="section">
+			<div class="section_content">
+				 <!--Form contact: Start-->
+				<form class="form">
+					<h4>Contact Information</h4>
+					<div id="team_email">
+						<label for="email" class="form_label">E-mail</label>
+					    <div class="form_input-conteiner">
+							<input type="email" placeholder="Enter your e-mail..." class="form_input" name="email" id="email"  >
+						    <img src="recursos/correo.svg" class="input_icon">
+							<img src="" class="icon_status">
+							<p class="message_error">Fill in the field correctly. Email can only have uppercase and lowercase letters, numbers, underscores, and middle hyphens.</p>  
+						</div>
+					</div>
+
+					<div id="team_phone">
+						<label for="phone" class="form_label">Phone</label>
+					    <div class="form_input-conteiner">
+							<input type="text" placeholder="Enter your phone..." class="form_input" name="phone" id="phone"> 
+					     	<img src="recursos/phone.svg" class="input_icon">
+
+							 <div class="list_options-conteiner" id="list_numbers-options">
+								<span><img src="recursos/arrowUp.svg" id="open_list-numbers"></span>
+								<div class="ul_list-conteiner">
+									<ul class="ul_list-numbers">
+										<li class="li_option-number li">+54</li>
+										<li class="li_option-number li">+591</li>
+										<li class="li_option-number li">+55</li>
+										<li class="li_option-number li">+56</li>
+										<li class="li_option-number li">+57</li>
+										<li class="li_option-number li">+593</li>
+										<li class="li_option-number li">+51</li>
+										<li class="li_option-number li">+52</li>
+										<li class="li_option-number li">+507</li>
+										<li class="li_option-number li">+598</li>
+									</ul> 
+								</div>
+							</div>
+							<img src="" class="icon_status" id="phone_estado">
+							<p class="message_error">Fill in the field correctly. This field only allows numbers and + sign</p>
+						</div> 
+					</div>
+				</form>
+				 <!--Form contact: End-->
+				
+				<!--Form send: Start-->
+				<form class="form">
+					<h4>Shipping Address</h4>
+					<div id="team_name">
+						<label for="name" class="form_label">Full name</label>
+					    <div class="form_input-conteiner">
+							<input type="text" placeholder="Rodney Cotton" class="form_input" id="name" name="name">
+						    <img src="recursos/user.svg" class="input_icon">  
+							<img src="" class="icon_status" id="name_estado">
+							<p class="message_error">The name can only contain 3 to 30 upper and lower case letters</p>  
+						</div>
+					</div>
+
+					<div id="team_address">
+						<label for="address" class="form_label">Address</label>
+					    <div class="form_input-conteiner">
+							<input type="text"  placeholder="Your address..." class="form_input" id="address" name="address">
+						    <img src="recursos/house.svg" class="input_icon">  
+							<img src="" class="icon_status" id="address_estado">
+							<p class="message_error">Please complete this field correctly</p>  
+						</div>
+					</div>
+
+					<div id="team_city">
+						<label for="city" class="form_label">City</label>
+					    <div class="form_input-conteiner">
+							<input type="text" placeholder="Your city..." class="form_input" id="city" name="city">
+						    <img src="recursos/city.svg" class="input_icon">  
+							<img src="" class="icon_status" id="city_estado">
+							<p class="message_error">Please complete this field correctly</p>  
+						</div>
+					</div>
+                    
+					<!--Form modification: Start-->
+					<div class="form_mod">
+						<div id="team_country">
+							<label for="country" class="form_label">Country</label>
+							<div class="form_input-conteiner">
+								<input type="text" placeholder="Your country..." class="form_input" id="country" name="country">
+								<img src="recursos/earth.svg" class="input_icon"> 
+
+								<div class="list_options-conteiner" id="list_options-country">
+									<span><img src="recursos/arrowUp.svg" id="open_list-country"></span>
+									<div class="ul_list-conteiner">
+										<ul class="ul_list-country">
+											<li class="li_option-country li">Option</li>
+											<li class="li_option-country li">Option</li>
+											<li class="li_option-country li">Option</li>
+											<li class="li_option-country li">Option</li>
+											<li class="li_option-country li">Option</li>
+										</ul> 
+									</div>
+								</div>
+								<img src="" class="icon_status" id="country_estado">
+							    <p class="message_error">Please complete this field correctly</p>  
+							</div>
+						</div>
+
+						<div id="team_postal">
+							<label for="postal" class="form_label">Postal code</label>
+							<div class="form_input-conteiner">
+								<input type="text" placeholder="Your postal code..." class="form_input" id="postal" name="postal">
+								<img src="recursos/city.svg" class="input_icon">
+								<img src="" class="icon_status" id="postal_estado">
+							    <p class="message_error">Please complete this field correctly</p>
+							</div>
+						</div>
+					</div>
+					<!--Form modification: End-->
+					<!--Form send: End-->
+
+					<!--Save and Autocomplete: Start-->
+					<div class="save_information info">						
+						<input type="checkbox" id="save_input">
+						<label for="save_input">Save this information for next time</label>
+					</div>
+
+					<div class="auto_information info">						
+						<input type="checkbox" id="auto_input">
+						<label for="auto_input">Autocomplete</label>
+					</div>
+					<!--Save and Autocomplete: End-->
+					
+					<!--Btn submit 'continue': Start-->
+					<div class="btn_conteiner">
+						<input type="submit" id="btn_continue" value="Continue"></input>
+					</div>
+					<!--Btn submit 'continue': End-->
+                    
+					<!--Final message: Start-->
+					<div>
+                         <p class="message_final-success">Form sent successfully!</p>
+						 <p class="message_final-error">You still need to fill in the fields correctly</p>
+					</div>
+					<!--Final message: End-->
+				</form>
+				<!--Formulario de envio: Final-->
+				
+			</div>
+
+			<aside>
+				<div class="aside">
+                    <div>
+                        <div class="container_item-purchase">
+							<img src="recursos/photo1.jpeg" alt="Mochila" class="img_article">
+							<div class="info_purchase-conteiner">
+                               <div class="info_purchase">
+								    <p>Vintage Backbag</p>
+									<span>$54.99</span>
+									<del>$94.99</del>
+							   </div>
+							   <div class="item_counter" id="contador_mochila">
+                                    <img src="recursos/arrowLeft.svg" class="restar mochila arrow">
+									<p class="item_accountant">1</p>
+									<img src="recursos/arrowRight.svg" class="sumar mochila arrow">
+							   </div>
+							</div>
+						</div>
+
+						<div class="container_item-purchase">
+							<img src="recursos/photo2.jpeg" alt="Zapatos" class="img_article">
+							<div class="info_purchase-conteiner">
+                               <div class="info_purchase">
+								    <p>Levi Shoes</p>
+									<span>$74.99</span>
+									<del>$124.99</del>
+							   </div>
+							   <div class="item_counter" id="contador_zapatillas">
+                                    <img src="recursos/arrowLeft.svg" class="restar zapatillas arrow">
+									<p class="item_accountant">1</p>
+									<img src="recursos/arrowRight.svg" class="sumar zapatillas arrow">
+							   </div>
+							</div>
+						</div>					
+					</div>
+
+					<div>
+						<div class="purchase_result">
+							<p>Shipping</p>
+							<span>$19</span>
+						</div>
+
+						<div class="purchase_result">
+							<p>Total</p>
+							<span>$129.00</span>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+
+	
+
+	<footer>
+		<div class="footer">
+			<p>&copy;Created by <b>Alexis Praiz</b> - Portafolio</p>
+		</div>
+	</footer>
+</main>
+
+<div class="light_box-contenedor">
+	<img src="" class="img_box-show">
+	<p class="parrafo_img"></p>
+	<img src="recursos/closeBox.svg" class="close_box">
+</div>
+
+<script src="formulario.js"></script>
+</body>
+</html>
